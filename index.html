@@ -1,349 +1,406 @@
-<!DOCTYPE html>
-<html>
-    <head>
-        <title>
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Nahiduzzaman Badhon - Flutter Developer</title>
+    <link rel="stylesheet" href="style.css" />
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <!-- Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- Navigation -->
+    <nav class="navbar">
+      <div class="container nav-container">
+        <a href="#" class="logo">NB<span class="dot">.</span></a>
+        <ul class="nav-links">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+        <div class="hamburger">
+          <i class="fas fa-bars"></i>
+        </div>
+      </div>
+    </nav>
 
-        </title>
-        <link rel="stylesheet" href="style.css">
-        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <!-- Hero Section -->
+    <header id="home">
+      <div class="container hero-content">
+        <!-- Floating Code Background -->
+        <div class="code-bg">
+          <span>&lt;/&gt;</span>
+          <span>{ }</span>
+          <span>#</span>
+          <span>;</span>
+          <span>()</span>
+          <span>class</span>
+          <span>var</span>
+          <span>if</span>
+        </div>
 
-        <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script>
+        <div class="hero-text">
+          <h3 class="mono-text">&lt;Hello, I'm /&gt;</h3>
+          <h1>Nahiduzzaman Badhon</h1>
+          <h2 class="typing-text">Flutter Mobile App Developer</h2>
+          <p>
+            Building beautiful, performant mobile applications with clean
+            architecture and SOLID principles.
+          </p>
+          <div class="cta-buttons">
+            <a href="#contact" class="btn btn-primary">Hire Me</a>
+            <a href="nahiduzzaman_badhon.pdf" class="btn btn-outline"
+              >Download CV</a
+            >
+          </div>
+          <div class="social-links">
+            <a href="https://github.com/Badhon100" target="_blank"
+              ><i class="fab fa-github"></i
+            ></a>
+            <a
+              href="https://www.linkedin.com/in/nahiduzzaman-dev/"
+              target="_blank"
+              ><i class="fab fa-linkedin"></i
+            ></a>
+            <a href="mailto:nahiduzzaman.dev@gmail.com"
+              ><i class="fas fa-envelope"></i
+            ></a>
+          </div>
+        </div>
+        <div class="hero-img-container">
+          <img
+            src="img/profile2.jpg"
+            alt="Nahiduzzaman Badhon"
+            class="hero-img"
+          />
+        </div>
+      </div>
+    </header>
 
-        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" "></script>
-        
-        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" ></script>
+    <!-- About Section -->
+    <section id="about" class="section">
+      <div class="container">
+        <h2 class="section-title">About Me</h2>
+        <div class="about-content">
+          <div class="about-text">
+            <p>
+              I am a passionate <strong>Flutter Developer</strong> with a strong
+              background in Computer Science. I specialize in building scalable
+              mobile applications using Dart and Flutter, strictly following
+              Clean Architecture and SOLID principles.
+            </p>
+            <p>
+              Currently, I am working at <strong>ProgressiveByte</strong> as a
+              Flutter Developer. Previously, I have contributed to various
+              projects at Raintor and TECNO BZ, mentoring junior developers and
+              collaborating with backend teams for seamless integrations.
+            </p>
+            <p>
+              I have also created and published the Flutter package
+              <a
+                href="https://pub.dev/packages/easy_api_call"
+                target="_blank"
+                class="link-highlight"
+                >easy_api_call</a
+              >
+              on pub.dev.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
 
-        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-    </head>
+    <!-- Skills Section -->
+    <section id="skills" class="section bg-light">
+      <div class="container">
+        <h2 class="section-title">Technical Skills</h2>
+        <div class="skills-grid">
+          <div class="skill-card">
+            <img src="img/flutter.svg" alt="Flutter" class="skill-icon-img" />
+            <span>Flutter</span>
+          </div>
+          <div class="skill-card">
+            <img src="img/dart.svg" alt="Dart" class="skill-icon-img" />
+            <span>Dart</span>
+          </div>
+          <div class="skill-card">
+            <i class="fas fa-server skill-icon"></i>
+            <span>RESTful APIs</span>
+          </div>
+          <div class="skill-card">
+            <i class="fas fa-fire skill-icon"></i>
+            <span>Firebase</span>
+          </div>
+          <div class="skill-card">
+            <i class="fas fa-code-branch skill-icon"></i>
+            <span>Git & Agile</span>
+          </div>
+          <div class="skill-card">
+            <i class="fas fa-layer-group skill-icon"></i>
+            <span>Clean Architecture</span>
+          </div>
+          <div class="skill-card">
+            <i class="fas fa-plug skill-icon"></i>
+            <span>WebSocket</span>
+          </div>
+          <div class="skill-card">
+            <i class="fas fa-bell skill-icon"></i>
+            <span>OneSignal</span>
+          </div>
+        </div>
+      </div>
+    </section>
 
-    <body>
-        <section id="header">
-            <div class="container text-center">
-                <div class="user-box">
-                    <img src="img/badhon">
-                    <h1>Nahiduzzaman Badhon</h1>
-                    <p>Flutter and Web Developer</p>
-                </div>
-
+    <!-- Experience Section -->
+    <section id="experience" class="section">
+      <div class="container">
+        <h2 class="section-title">Professional Experience</h2>
+        <div class="timeline">
+          <!-- Job 1 -->
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-date">Jan 25, 2026 - Present</div>
+            <div class="timeline-content">
+              <h3>Flutter Developer</h3>
+              <h4>ProgressiveByte</h4>
+              <ul>
+                <li>Handling client and in-house projects.</li>
+                <li>Maintaining existing code.</li>
+                <li>
+                  Implementing scalable solutions using Clean Architecture and
+                  SOLID principles.
+                </li>
+                <li>
+                  Collaborating with project managers to refine business
+                  requirements.
+                </li>
+                <li>
+                  Managing app releases and maintenance on Play Store and App
+                  Store.
+                </li>
+              </ul>
             </div>
+          </div>
 
-            <div class="scroll-btn">
-                <div class="scroll-bar">
-                    <a href="#about"><span></span></a>
-                </div>
+          <!-- Job 2 -->
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-date">Apr 2024 - Dec 2025</div>
+            <div class="timeline-content">
+              <h3>Flutter Developer</h3>
+              <h4>Raintor</h4>
+              <ul>
+                <li>
+                  Architected and implemented scalable Flutter apps using clean
+                  architecture and SOLID principles.
+                </li>
+                <li>
+                  Mentored junior Flutter developers, providing technical
+                  guidance and best practices.
+                </li>
+                <li>
+                  Collaborated with backend teams for seamless API integration
+                  and with designers for intuitive UI/UX.
+                </li>
+                <li>
+                  Coordinated with project managers to refine business logic and
+                  manage Play Store publishing.
+                </li>
+              </ul>
             </div>
-        </section>
+          </div>
 
-
-
-        <section id="user-info">
-            <div class="nav-bar">
-                <nav class="navbar navbar-expand-lg ">
-                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                        <i class="fa fa-bars"></i>
-                    </button>
-                    <div class="collapse navbar-collapse" id="navbarNav">
-                    <ul class="navbar-nav ml-auto">
-                        <li class="nav-item ">
-                        <a class="nav-link" href="#top">HOME </a>
-                        </li>
-                        <li class="nav-item">
-                        <a class="nav-link" href="#about">ABOUT ME</a>
-                        </li>
-                        <li class="nav-item">
-                        <a class="nav-link" href="#resume">RESUME</a>
-                        </li>
-                        <li class="nav-item">
-                        <a class="nav-link" href="#sevices">SERVICES</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#contact">CONTACT</a>
-                        </li>
-                                                               
-                 
-                    </ul>
-                    </div>
-                </nav>
+          <!-- Job 3 -->
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-date">Sep 2023 - Jun 2024</div>
+            <div class="timeline-content">
+              <h3>Software Engineer</h3>
+              <h4>TECNO BZ</h4>
+              <ul>
+                <li>
+                  Developed and maintained scalable mobile applications for both
+                  B2B and B2C.
+                </li>
+                <li>
+                  Actively maintained live applications, ensuring stability,
+                  performance, and regular updates.
+                </li>
+                <li>
+                  Worked with UI/UX designers to implement intuitive and
+                  visually appealing user interfaces.
+                </li>
+                <li>
+                  Managed the publishing, updating, and maintenance of apps on
+                  the Google Play Store.
+                </li>
+              </ul>
             </div>
+          </div>
 
-              <!---------------about----------->
-
-              <div class="about container" id="about">
-                  <div class="row">
-                      <div class="col-md-6 text-center">
-                          <img src="img/profile2.jpg" class="profile-img">
-                      </div>
-                      <div class="col-md-6">
-                          <h3>Who am I</h3>
-                          <p>
-                              I am Nahiduzzaman Badhon. I was born in Tongi, Gazipur. I have completed my Bachelor degree in Computer Science and Engineering from International University of Business Agriculture and Technology (IUBAT). I am a Flutter Developer.<br>
-                        </p>
-                        
-                            
-                            <div class="skills-bar">
-                                <p>Bootstrap</p>
-                                <div class="progress">
-                                    <div class="progress-bar" style="width: 95%;">95%</div>
-                                </div>
-                                
-                            
-                            </div>
-
-                            <div class="skills-bar">
-                                <p>Javascript</p>
-                                <div class="progress">
-                                    <div class="progress-bar" style="width: 70%;">70%</div>
-                                </div>
-                                
-                            
-                            </div>
-
-                            <div class="skills-bar">
-                                <p>PHP</p>
-                                <div class="progress">
-                                    <div class="progress-bar" style="width: 85%;">85%</div>
-                                </div>
-                                
-                            
-                            </div>
-                                                                                
-                            <div class="skills-bar">
-                                <p>Dart</p>
-                                <div class="progress">
-                                    <div class="progress-bar" style="width: 90%;">90%</div>
-                                </div>
-                                
-                            
-                            </div>
-                                                                                 
-                            <div class="skills-bar">
-                                <p>Flutter</p>
-                                <div class="progress">
-                                    <div class="progress-bar" style="width: 90%;">90%</div>
-                                </div>
-                                
-                            
-                            </div>
-    
-
-                      </div>
-                  </div>
-
-
-                    
-
-              </div>
-
-
-              <!--------------Social-icons-------------->
-
-              <div class="social-icons">
-                  <ul>
-                      
-                      <a href="https://github.com/Badhon100"><li><i class="fa fa-github"></i> </li></a>
-                      <a href="https://www.linkedin.com/in/nahiduzzaman-badhon-93718098"><li><i class="fa fa-linkedin"></i> </li></a>
-                      <a href="https://www.facebook.com/badhonahmed.nahid"><li><i class="fa fa-facebook"></i> </li></a>
-                  </ul>
-              </div>
-
-
-              <!-----------resume---------->
-
-              <div class="resume" id="resume">
-                  <div class="container">
-                      <div class="row">
-                                     
-                                                    
-                                     <div class = "col-md-4">
-                            <h3 class="text-center">Experiance</h3>
-                            <ul class="timeline">
-                                  <li>
-                                    <h4><span>Flutter Developer</span></h4>
-                                    <p>
-                                      <b></b> MeekTec IT     04/2022 - Present<br> 
-
-                                </li>
-                                                
-                                                <li>
-                                    <h4><span>Flutter Trainer</span></h4>
-                                    <p>
-                                      <b></b> Wizard Software and Technology Bangladesh      10/2021 - 03/2021<br> 
-
-                                </li>
-                                <li>
-                                    <h4><span>Web Developer(Intern)</span></h4>
-                                    <p>
-                                      <b></b> Zaman IT                     05/2019 - 09/2019<br> 
-
-                                </li>
-                                
-                            </ul>
-                        </div>
-                                                
-                          <div class = "col-md-4">
-                              <h3 class="text-center">My Education</h3>
-                              <ul class="timeline">
-                                  <li>
-                                      <h4><span>B.Sc in Computer Science and Engineering</span></h4>
-                                      <p>
-                                        <b>University</b> - International University of Busniness Agriculture and Technology<br>
-                                        <b>Session</b> - May,2015 to Sept,2019<br>
-                                        <b>CGPA</b> - 3.41 out of 4 <br>
-                                        <b>Location</b> - Uttara, Dhaka, Bangladesh
-
-                                    </p>
-
-                                  </li>
-
-                                  <li>
-                                    <h4><span>Secondary Certificate (HSC)</span></h4>
-                                    <p>
-                                      <b>College</b> - Safiuddin Sarker Academy and College<br>
-                                      <b>Passing Year</b> - 2014<br>
-                                      <b>GPA</b> - 4.20 out of 5 <br>
-                                      <b>Board</b> - Dhaka
-
-                                  </p>
-
-                                </li>
-
-                                <li>
-                                    <h4><span> School Certificate (SSC)</span></h4>
-                                    <p>
-                                      <b>School</b> - Shahajuddin Sarker Model School and College<br>
-                                      <b>Passing Year</b> - 2011<br>
-                                      <b>GPA</b> - 5 out of 5 <br>
-                                      <b>Board</b> - Dhaka
-
-                                  </p>
-
-                                </li>
-
-                              </ul>
-                          
-                      </div>
-
-
-                      
-                        <div class = "col-md-4">
-                            <h3 class="text-center">Tranning</h3>
-                            <ul class="timeline">
-                                <li>
-                                    <h4><span>Java Programming</span></h4>
-                                    <p>
-                                      <b>Under</b> - LICT, Project of Bangladesh Computer Council (BCC, ICT Division)<br>
-                                  </p>
-
-                                </li>
-                           
-                            </ul>
-                        </div>
-                                                
-                            
-
-                      </div>
-
-
-                  </div>
-              </div>
-
-
-
-
-
-              <!--------------services---------------->
-
-            <div class="services" id="sevices">
-                <div class="container">
-                    <h1 class="text-center">My offered Sevice</h1>
-                    
-
-                    <div class="row">
-                       <div class="col-md-12">
-    <div class=" dev col-md-4">
-                            <div class="services-box">
-                                <i class="fa fa-laptop"></i><span>FLutter Development</span>
-                                <p> Are looking for a right person to build a crossplateform mobile app? Just knock me to that for you.</p>
-                                <br>
-                                <ul >
-                                    <li><i class="fa fa-check"></i>Attractive Design</li><br>
-                                    <li><i class="fa fa-check"></i>Clean Code</li><br>
-                                    <li><i class="fa fa-check"></i>Firebase</li><br>
-                                    <li><i class="fa fa-check"></i>Restful API intrigration</li><br>
-                                    <li><i class="fa fa-check"></i>Security</li>
-                                </ul>
-                            </div>
-                        </div>  
-                        <div class=" dev col-md-4">
-                           
-                                                              
-                         </div>
-                    </div>
-                </div>
-
+          <!-- Job 4 -->
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-date">Apr 2022 - Nov 2022</div>
+            <div class="timeline-content">
+              <h3>Junior Flutter Developer</h3>
+              <h4>MecTec IT</h4>
+              <ul>
+                <li>Developed and maintained in-house projects.</li>
+                <li>
+                  Wrote clean, efficient, pixel-perfect code and well-documented
+                  code.
+                </li>
+                <li>Uploaded & monitored the app on Google Play Store.</li>
+                <li>
+                  Participated in cross-team collaboration/discussion to
+                  finalize schema definition.
+                </li>
+              </ul>
             </div>
+          </div>
 
-
-            <br> <br>
-
-            <!-----------------contact------------>
-
-            <div class="contact" id="contact">
-                <div class="container text-center">
-                    <h1>Contact Me</h1>
-
-                    <div class="row">
-                        <div class="col-md-4">
-                            <i class="fa fa-phone"></i>
-                            <p>+88 01685835483</p>
-                        </div>
-                    
-
-                    
-                    <div class="col-md-4">
-                        <i class="fa fa-envelope"></i>
-                        <p>badhon.nahiduzzaman@gmail.com</p>
-                    </div>
-                    
-
-                    
-                    <div class=" def col-md-4">
-                        <i class="fa fa-linkedin"></i>                         
-                        <p ><a href="https://www.linkedin.com/in/nahiduzzaman-badhon-93718098">Linkedin</a></p>
-                    </div>
-                    
-                    </div>
-                <button type="button" class="btn btn-primary">
-                    <i class="fa fa-download"></i><a href="nahiduzzaman_badhon.pdf">Resume</a>
-                    
-                </button>
-
-                <button type="button" class="btn btn-primary">
-                    <i class="fa fa-rocket"></i>
-                    <a href="mailto:badhon.nahiduzzaman@gmail.com">Hire Me</a>
-                </button>
-
-
-                </div>
-
-                <br><br>
-
-                <div class="footer text-center">
-
-                    <p>Designed and Devloped by Nahiduzzaman Badhon</p>
-
-                </div>
-
+          <!-- Job 5 -->
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-date">Oct 2021 - Feb 2022</div>
+            <div class="timeline-content">
+              <h3>Flutter Trainer</h3>
+              <h4>Wizard Software & Technology Bangladesh LTD.</h4>
+              <ul>
+                <li>Teaching students about Dart programming language.</li>
+                <li>Teaching students about Flutter framework.</li>
+                <li>
+                  Teaching students to build mobile apps using Flutter,
+                  Firebase, REST APIs, and state management.
+                </li>
+              </ul>
             </div>
+          </div>
+        </div>
+      </div>
+    </section>
 
-        </section>
+    <!-- Education Section -->
+    <section id="education" class="section bg-light">
+      <div class="container">
+        <h2 class="section-title">Education</h2>
+        <div class="education-grid">
+          <div class="education-card">
+            <i class="fas fa-graduation-cap edu-icon"></i>
+            <h3>B.Sc. in Computer Science & Engineering</h3>
+            <h4>
+              IUBAT - International University of Business Agriculture &
+              Technology
+            </h4>
+            <p class="edu-date">May 2015 - Sept 2019</p>
+            <p>Dhaka-1230</p>
+          </div>
+          <div class="education-card">
+            <i class="fas fa-school edu-icon"></i>
+            <h3>Higher Secondary Certificate</h3>
+            <h4>Safiuddin Sarker Academy & College</h4>
+            <p class="edu-date">2014</p>
+            <p>Tongi, Gazipur</p>
+          </div>
+        </div>
+      </div>
+    </section>
 
-        <script src="smooth-scroll.js"></script>
+    <!-- Contact Section -->
+    <section id="contact" class="section">
+      <div class="container">
+        <h2 class="section-title">Contact Me</h2>
+        <div class="contact-wrapper">
+          <div class="contact-card">
+            <div class="contact-icon"><i class="fas fa-phone-alt"></i></div>
+            <h3>Phone</h3>
+            <p>+880 1685 835483</p>
+          </div>
+          <div class="contact-card">
+            <div class="contact-icon"><i class="fas fa-envelope"></i></div>
+            <h3>Email</h3>
+            <p>
+              <a href="mailto:nahiduzzaman.dev@gmail.com"
+                >nahiduzzaman.dev@gmail.com</a
+              >
+            </p>
+          </div>
+          <div class="contact-card">
+            <div class="contact-icon"><i class="fab fa-linkedin-in"></i></div>
+            <h3>LinkedIn</h3>
+            <p>
+              <a
+                href="https://www.linkedin.com/in/nahiduzzaman-dev/"
+                target="_blank"
+                >Connect on LinkedIn</a
+              >
+            </p>
+          </div>
+        </div>
 
-        <script>
-            var scroll = new SmoothScroll('a[href*="#"]');
-        </script>
+        <div class="download-cv-area">
+          <a href="nahiduzzaman_badhon.pdf" class="btn btn-primary"
+            ><i class="fas fa-download"></i> Download Resume</a
+          >
+        </div>
+      </div>
+    </section>
 
+    <footer>
+      <div class="container footer-content">
+        <p>&copy; 2026 Nahiduzzaman Badhon. All Rights Reserved.</p>
+        <div class="footer-social">
+          <a href="https://github.com/Badhon100" target="_blank"
+            ><i class="fab fa-github"></i
+          ></a>
+          <a
+            href="https://www.linkedin.com/in/nahiduzzaman-dev/"
+            target="_blank"
+            ><i class="fab fa-linkedin"></i
+          ></a>
+          <a href="mailto:nahiduzzaman.dev@gmail.com"
+            ><i class="fas fa-envelope"></i
+          ></a>
+        </div>
+      </div>
+    </footer>
 
-    </body>
+    <script>
+      // Simple Mobile Menu Toggle
+      const hamburger = document.querySelector(".hamburger");
+      const navLinks = document.querySelector(".nav-links");
+
+      hamburger.addEventListener("click", () => {
+        navLinks.classList.toggle("active");
+      });
+
+      // Close menu when clicking a link
+      document.querySelectorAll(".nav-links a").forEach((link) => {
+        link.addEventListener("click", () => {
+          navLinks.classList.remove("active");
+        });
+      });
+
+      // Smooth Scroll for anchor links (polyfill for older browsers if needed, but modern browsers support CSS scroll-behavior)
+      document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
+        anchor.addEventListener("click", function (e) {
+          e.preventDefault();
+          document.querySelector(this.getAttribute("href")).scrollIntoView({
+            behavior: "smooth",
+          });
+        });
+      });
+    </script>
+  </body>
 </html>
