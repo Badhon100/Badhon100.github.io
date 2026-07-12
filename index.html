@@ -1,406 +1,116 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Nahiduzzaman Badhon - Flutter Developer</title>
-    <link rel="stylesheet" href="style.css" />
-    <!-- Font Awesome -->
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
-    />
-    <!-- Google Fonts -->
-    <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
-      rel="stylesheet"
-    />
-  </head>
-  <body>
-    <!-- Navigation -->
-    <nav class="navbar">
-      <div class="container nav-container">
-        <a href="#" class="logo">NB<span class="dot">.</span></a>
-        <ul class="nav-links">
-          <li><a href="#home">Home</a></li>
-          <li><a href="#about">About</a></li>
-          <li><a href="#skills">Skills</a></li>
-          <li><a href="#experience">Experience</a></li>
-          <li><a href="#contact">Contact</a></li>
-        </ul>
-        <div class="hamburger">
-          <i class="fas fa-bars"></i>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Nahiduzzaman Badhon — Flutter developer crafting scalable Android and iOS applications." />
+  <meta name="theme-color" content="#07110e" />
+  <title>Nahiduzzaman Badhon — Flutter Developer</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+  <link rel="stylesheet" href="style.css?v=3" />
+</head>
+<body>
+  <div class="cursor-glow" aria-hidden="true"></div>
+  <div class="scroll-progress" aria-hidden="true"><span></span></div>
+
+  <nav class="navbar" aria-label="Main navigation">
+    <a href="#home" class="brand" aria-label="Back to home"><span>NB</span><i></i></a>
+    <div class="nav-links" id="nav-menu">
+      <a href="#about">About</a><a href="#skills">Stack</a><a href="#experience">Journey</a><a href="#education">Education</a>
+    </div>
+    <a href="#contact" class="nav-cta">Let's talk <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+    <button class="menu-toggle" aria-label="Open navigation" aria-expanded="false" aria-controls="nav-menu"><span></span><span></span></button>
+  </nav>
+
+  <main>
+    <header id="home" class="hero">
+      <div class="orb orb-one"></div><div class="orb orb-two"></div>
+      <div class="hero-copy" data-reveal>
+        <div class="availability"><span></span> Available for ambitious mobile products</div>
+        <p class="eyebrow">Flutter developer · Dhaka, Bangladesh</p>
+        <h1>I build apps that feel <em>native</em> everywhere.</h1>
+        <p class="hero-intro">I’m Nahiduzzaman Badhon. I turn complex product ideas into beautiful, performant Android and iOS experiences—with Flutter, clean architecture, and an eye for the tiny details.</p>
+        <div class="hero-actions">
+          <a class="button primary magnetic" href="#contact">Build something together <i class="fa-solid fa-arrow-right"></i></a>
+          <a class="button ghost magnetic" href="nahiduzzaman_badhon.pdf" download>Download résumé <i class="fa-solid fa-download"></i></a>
+        </div>
+        <div class="hero-meta"><span><b>04+</b> years crafting apps</span><span><b>iOS + Android</b> one elegant codebase</span></div>
+      </div>
+
+      <div class="device-stage" data-reveal aria-label="Mobile application interface illustration">
+        <div class="code-pill pill-one"><svg class="brand-icon" viewBox="0 0 128 128" aria-hidden="true"><path fill="#3FB6D3" d="M12.3 64.2 76.3 0h39.4L32.1 83.6zm64 63.8h39.4L81.6 93.9l34.1-34.8H76.3L42.2 93.5z"/><path fill="#19599A" d="m115.7 128-34.1-34.1-20 19.2L76.3 128z"/></svg> Flutter</div>
+        <div class="code-pill pill-two"><span>{ }</span> Clean code</div>
+        <div class="phone phone-back">
+          <div class="phone-screen ios-screen"><div class="island"></div><small>9:41</small><h3>Good morning,</h3><h2>Badhon <span>👋</span></h2><div class="activity-card"><i class="fa-solid fa-chart-simple"></i><p>Weekly activity<strong>84%</strong></p></div><div class="mini-row"><i></i><i></i><i></i><i></i><i></i></div></div>
+        </div>
+        <div class="phone phone-front" data-tilt>
+          <div class="phone-screen android-screen"><div class="camera"></div><div class="appbar"><span>My projects</span><i class="fa-solid fa-bell"></i></div><div class="flutter-mark"><svg viewBox="0 0 128 128" role="img" aria-label="Flutter"><path fill="#3FB6D3" d="M12.3 64.2 76.3 0h39.4L32.1 83.6zm64 63.8h39.4L81.6 93.9l34.1-34.8H76.3L42.2 93.5z"/><path fill="#19599A" d="m115.7 128-34.1-34.1-20 19.2L76.3 128z"/></svg></div><h3>Built to perform.</h3><p>One codebase. Every screen.</p><div class="build-card"><span>BUILD STATUS</span><b><i></i> Ready to ship</b></div><button>Explore work <i class="fa-solid fa-arrow-right"></i></button><div class="gesture"></div></div>
         </div>
       </div>
-    </nav>
-
-    <!-- Hero Section -->
-    <header id="home">
-      <div class="container hero-content">
-        <!-- Floating Code Background -->
-        <div class="code-bg">
-          <span>&lt;/&gt;</span>
-          <span>{ }</span>
-          <span>#</span>
-          <span>;</span>
-          <span>()</span>
-          <span>class</span>
-          <span>var</span>
-          <span>if</span>
-        </div>
-
-        <div class="hero-text">
-          <h3 class="mono-text">&lt;Hello, I'm /&gt;</h3>
-          <h1>Nahiduzzaman Badhon</h1>
-          <h2 class="typing-text">Flutter Mobile App Developer</h2>
-          <p>
-            Building beautiful, performant mobile applications with clean
-            architecture and SOLID principles.
-          </p>
-          <div class="cta-buttons">
-            <a href="#contact" class="btn btn-primary">Hire Me</a>
-            <a href="nahiduzzaman_badhon.pdf" class="btn btn-outline"
-              >Download CV</a
-            >
-          </div>
-          <div class="social-links">
-            <a href="https://github.com/Badhon100" target="_blank"
-              ><i class="fab fa-github"></i
-            ></a>
-            <a
-              href="https://www.linkedin.com/in/nahiduzzaman-dev/"
-              target="_blank"
-              ><i class="fab fa-linkedin"></i
-            ></a>
-            <a href="mailto:nahiduzzaman.dev@gmail.com"
-              ><i class="fas fa-envelope"></i
-            ></a>
-          </div>
-        </div>
-        <div class="hero-img-container">
-          <img
-            src="img/profile2.jpg"
-            alt="Nahiduzzaman Badhon"
-            class="hero-img"
-          />
-        </div>
-      </div>
+      <a href="#about" class="scroll-cue"><span>Scroll to explore</span><i class="fa-solid fa-arrow-down"></i></a>
     </header>
 
-    <!-- About Section -->
-    <section id="about" class="section">
-      <div class="container">
-        <h2 class="section-title">About Me</h2>
-        <div class="about-content">
-          <div class="about-text">
-            <p>
-              I am a passionate <strong>Flutter Developer</strong> with a strong
-              background in Computer Science. I specialize in building scalable
-              mobile applications using Dart and Flutter, strictly following
-              Clean Architecture and SOLID principles.
-            </p>
-            <p>
-              Currently, I am working at <strong>ProgressiveByte</strong> as a
-              Flutter Developer. Previously, I have contributed to various
-              projects at Raintor and TECNO BZ, mentoring junior developers and
-              collaborating with backend teams for seamless integrations.
-            </p>
-            <p>
-              I have also created and published the Flutter package
-              <a
-                href="https://pub.dev/packages/easy_api_call"
-                target="_blank"
-                class="link-highlight"
-                >easy_api_call</a
-              >
-              on pub.dev.
-            </p>
-          </div>
+    <div class="tech-marquee" aria-hidden="true"><div><span>FLUTTER</span><i>✦</i><span>DART</span><i>✦</i><span>ANDROID</span><i>✦</i><span>iOS</span><i>✦</i><span>CLEAN ARCHITECTURE</span><i>✦</i><span>FLUTTER</span><i>✦</i><span>DART</span><i>✦</i><span>ANDROID</span><i>✦</i><span>iOS</span><i>✦</i><span>CLEAN ARCHITECTURE</span><i>✦</i></div></div>
+
+    <section id="about" class="section about">
+      <div class="section-heading" data-reveal><p class="eyebrow">01 / About</p><h2>Engineering discipline.<br><span>Product sensitivity.</span></h2></div>
+      <div class="about-grid">
+        <div class="about-portrait" data-reveal><div class="portrait-frame"><img src="img/profile2.jpg" alt="Nahiduzzaman Badhon" /><div class="portrait-label"><i class="fa-solid fa-location-dot"></i> Dhaka · GMT+6</div></div></div>
+        <div class="about-copy" data-reveal>
+          <p class="lead">I’m a Flutter developer with a Computer Science background, focused on mobile products that stay maintainable long after launch.</p>
+          <p>At <strong>ProgressiveByte</strong>, I handle client and in-house products from business requirements through store release. Previously at Raintor and TECNO BZ, I built scalable B2B and B2C apps, collaborated closely with design and backend teams, and mentored junior developers.</p>
+          <p>I care about architecture because users eventually feel it: faster features, fewer bugs, and a product that can grow with confidence.</p>
+          <a class="text-link" href="https://pub.dev/packages/easy_api_call" target="_blank" rel="noreferrer">Creator of <b>easy_api_call</b> on pub.dev <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+          <div class="principles"><span>Clean architecture</span><span>SOLID principles</span><span>Pixel precision</span><span>Agile delivery</span></div>
         </div>
       </div>
     </section>
 
-    <!-- Skills Section -->
-    <section id="skills" class="section bg-light">
-      <div class="container">
-        <h2 class="section-title">Technical Skills</h2>
-        <div class="skills-grid">
-          <div class="skill-card">
-            <img src="img/flutter.svg" alt="Flutter" class="skill-icon-img" />
-            <span>Flutter</span>
-          </div>
-          <div class="skill-card">
-            <img src="img/dart.svg" alt="Dart" class="skill-icon-img" />
-            <span>Dart</span>
-          </div>
-          <div class="skill-card">
-            <i class="fas fa-server skill-icon"></i>
-            <span>RESTful APIs</span>
-          </div>
-          <div class="skill-card">
-            <i class="fas fa-fire skill-icon"></i>
-            <span>Firebase</span>
-          </div>
-          <div class="skill-card">
-            <i class="fas fa-code-branch skill-icon"></i>
-            <span>Git & Agile</span>
-          </div>
-          <div class="skill-card">
-            <i class="fas fa-layer-group skill-icon"></i>
-            <span>Clean Architecture</span>
-          </div>
-          <div class="skill-card">
-            <i class="fas fa-plug skill-icon"></i>
-            <span>WebSocket</span>
-          </div>
-          <div class="skill-card">
-            <i class="fas fa-bell skill-icon"></i>
-            <span>OneSignal</span>
-          </div>
-        </div>
+    <section id="skills" class="section skills">
+      <div class="section-heading split" data-reveal><div><p class="eyebrow">02 / Toolkit</p><h2>My mobile<br><span>development stack.</span></h2></div><p>The right tools, thoughtfully combined—from interface and state to API integration, notifications, and release.</p></div>
+      <div class="skill-grid">
+        <article class="skill-card featured" data-reveal><div class="skill-top"><svg class="brand-icon" viewBox="0 0 128 128" role="img" aria-label="Flutter"><path fill="#3FB6D3" d="M12.3 64.2 76.3 0h39.4L32.1 83.6zm64 63.8h39.4L81.6 93.9l34.1-34.8H76.3L42.2 93.5z"/><path fill="#19599A" d="m115.7 128-34.1-34.1-20 19.2L76.3 128z"/></svg><span>01</span></div><h3>Flutter</h3><p>Fluid, responsive experiences for iOS and Android from a shared codebase.</p><div class="card-line"></div></article>
+        <article class="skill-card" data-reveal><div class="skill-top"><svg class="brand-icon" viewBox="0 0 128 128" role="img" aria-label="Dart"><path fill="#00c4b3" d="m35.2 34.9-8.3-8.3v59.7c0 2.4.2 4.8.8 7.1l65.6 23.1 16.3-7.2z"/><path fill="#22d3c5" d="m109.6 109.3-16.3 7.2-65.4-23.1c1.3 4.8 4 10.1 7 13.2l21.3 21.2 47.6.1z"/><path fill="#0075c9" d="M1.7 65.1C-.4 67.3.7 72 4 75.5l14.7 14.8 9.2 3.3-1-66.9zm107.9 44.2 7.2-16.4-23-65.6-66.8-.7z"/><path fill="#00a8e1" d="m109.6 109.3 17.7-5.8V54.8l-20.4-20.5c-3-3-8.3-5.8-13.2-7l23.1 65.6z"/><path fill="#00c4b3" d="M90.5 18.2 75.7 3.5c-3.4-3.4-8-4.4-10.4-2.3L26.9 26.6h59.5c2.6 0 4.9.2 7.2.8z"/></svg><span>02</span></div><h3>Dart</h3><p>Typed, testable application logic designed to scale cleanly.</p><div class="card-line"></div></article>
+        <article class="skill-card" data-reveal><div class="skill-top"><i class="fa-solid fa-layer-group"></i><span>03</span></div><h3>Architecture</h3><p>Clean Architecture, SOLID principles, modular and maintainable systems.</p><div class="card-line"></div></article>
+        <article class="skill-card" data-reveal><div class="skill-top"><i class="fa-solid fa-plug"></i><span>04</span></div><h3>Connectivity</h3><p>RESTful APIs, WebSocket, Firebase and robust data flows.</p><div class="card-line"></div></article>
+        <article class="skill-card" data-reveal><div class="skill-top"><i class="fa-solid fa-bell"></i><span>05</span></div><h3>Engagement</h3><p>OneSignal notifications and thoughtful user re-engagement.</p><div class="card-line"></div></article>
+        <article class="skill-card" data-reveal><div class="skill-top"><i class="fa-solid fa-code-branch"></i><span>06</span></div><h3>Delivery</h3><p>Git, Agile teamwork, Play Store and App Store release management.</p><div class="card-line"></div></article>
       </div>
     </section>
 
-    <!-- Experience Section -->
-    <section id="experience" class="section">
-      <div class="container">
-        <h2 class="section-title">Professional Experience</h2>
-        <div class="timeline">
-          <!-- Job 1 -->
-          <div class="timeline-item">
-            <div class="timeline-dot"></div>
-            <div class="timeline-date">Jan 25, 2026 - Present</div>
-            <div class="timeline-content">
-              <h3>Flutter Developer</h3>
-              <h4>ProgressiveByte</h4>
-              <ul>
-                <li>Handling client and in-house projects.</li>
-                <li>Maintaining existing code.</li>
-                <li>
-                  Implementing scalable solutions using Clean Architecture and
-                  SOLID principles.
-                </li>
-                <li>
-                  Collaborating with project managers to refine business
-                  requirements.
-                </li>
-                <li>
-                  Managing app releases and maintenance on Play Store and App
-                  Store.
-                </li>
-              </ul>
-            </div>
-          </div>
-
-          <!-- Job 2 -->
-          <div class="timeline-item">
-            <div class="timeline-dot"></div>
-            <div class="timeline-date">Apr 2024 - Dec 2025</div>
-            <div class="timeline-content">
-              <h3>Flutter Developer</h3>
-              <h4>Raintor</h4>
-              <ul>
-                <li>
-                  Architected and implemented scalable Flutter apps using clean
-                  architecture and SOLID principles.
-                </li>
-                <li>
-                  Mentored junior Flutter developers, providing technical
-                  guidance and best practices.
-                </li>
-                <li>
-                  Collaborated with backend teams for seamless API integration
-                  and with designers for intuitive UI/UX.
-                </li>
-                <li>
-                  Coordinated with project managers to refine business logic and
-                  manage Play Store publishing.
-                </li>
-              </ul>
-            </div>
-          </div>
-
-          <!-- Job 3 -->
-          <div class="timeline-item">
-            <div class="timeline-dot"></div>
-            <div class="timeline-date">Sep 2023 - Jun 2024</div>
-            <div class="timeline-content">
-              <h3>Software Engineer</h3>
-              <h4>TECNO BZ</h4>
-              <ul>
-                <li>
-                  Developed and maintained scalable mobile applications for both
-                  B2B and B2C.
-                </li>
-                <li>
-                  Actively maintained live applications, ensuring stability,
-                  performance, and regular updates.
-                </li>
-                <li>
-                  Worked with UI/UX designers to implement intuitive and
-                  visually appealing user interfaces.
-                </li>
-                <li>
-                  Managed the publishing, updating, and maintenance of apps on
-                  the Google Play Store.
-                </li>
-              </ul>
-            </div>
-          </div>
-
-          <!-- Job 4 -->
-          <div class="timeline-item">
-            <div class="timeline-dot"></div>
-            <div class="timeline-date">Apr 2022 - Nov 2022</div>
-            <div class="timeline-content">
-              <h3>Junior Flutter Developer</h3>
-              <h4>MecTec IT</h4>
-              <ul>
-                <li>Developed and maintained in-house projects.</li>
-                <li>
-                  Wrote clean, efficient, pixel-perfect code and well-documented
-                  code.
-                </li>
-                <li>Uploaded & monitored the app on Google Play Store.</li>
-                <li>
-                  Participated in cross-team collaboration/discussion to
-                  finalize schema definition.
-                </li>
-              </ul>
-            </div>
-          </div>
-
-          <!-- Job 5 -->
-          <div class="timeline-item">
-            <div class="timeline-dot"></div>
-            <div class="timeline-date">Oct 2021 - Feb 2022</div>
-            <div class="timeline-content">
-              <h3>Flutter Trainer</h3>
-              <h4>Wizard Software & Technology Bangladesh LTD.</h4>
-              <ul>
-                <li>Teaching students about Dart programming language.</li>
-                <li>Teaching students about Flutter framework.</li>
-                <li>
-                  Teaching students to build mobile apps using Flutter,
-                  Firebase, REST APIs, and state management.
-                </li>
-              </ul>
-            </div>
-          </div>
-        </div>
+    <section id="experience" class="section experience">
+      <div class="section-heading" data-reveal><p class="eyebrow">03 / Experience</p><h2>A journey of<br><span>building and leading.</span></h2></div>
+      <div class="career-list">
+        <article class="career active" data-reveal><div class="career-date">Jan 2026 — Present</div><div class="career-role"><span>ProgressiveByte</span><h3>Flutter Developer</h3></div><div class="career-detail"><p>Leading client and in-house mobile work from requirements through release.</p><ul><li>Maintain and evolve existing products</li><li>Implement scalable Clean Architecture solutions</li><li>Refine requirements with project managers</li><li>Manage Play Store and App Store releases</li></ul></div><button class="career-toggle" aria-label="Toggle details"><i class="fa-solid fa-plus"></i></button></article>
+        <article class="career" data-reveal><div class="career-date">Apr 2024 — Dec 2025</div><div class="career-role"><span>Raintor</span><h3>Flutter Developer</h3></div><div class="career-detail"><p>Architected scalable apps while helping the Flutter team grow.</p><ul><li>Built with Clean Architecture and SOLID</li><li>Mentored junior Flutter developers</li><li>Partnered with backend and design teams</li><li>Managed business logic and Play Store publishing</li></ul></div><button class="career-toggle" aria-label="Toggle details"><i class="fa-solid fa-plus"></i></button></article>
+        <article class="career" data-reveal><div class="career-date">Sep 2023 — Jun 2024</div><div class="career-role"><span>TECNO BZ</span><h3>Software Engineer</h3></div><div class="career-detail"><p>Developed and maintained stable, performant B2B and B2C applications.</p><ul><li>Maintained live mobile products</li><li>Implemented polished UI with designers</li><li>Managed Google Play publishing and updates</li></ul></div><button class="career-toggle" aria-label="Toggle details"><i class="fa-solid fa-plus"></i></button></article>
+        <article class="career" data-reveal><div class="career-date">Apr 2022 — Nov 2022</div><div class="career-role"><span>MecTec IT</span><h3>Junior Flutter Developer</h3></div><div class="career-detail"><p>Built pixel-precise in-house applications and supported their release.</p><ul><li>Wrote efficient, documented code</li><li>Uploaded and monitored Play Store apps</li><li>Collaborated across teams on schema definition</li></ul></div><button class="career-toggle" aria-label="Toggle details"><i class="fa-solid fa-plus"></i></button></article>
+        <article class="career" data-reveal><div class="career-date">Oct 2021 — Feb 2022</div><div class="career-role"><span>Wizard Software & Technology</span><h3>Flutter Trainer</h3></div><div class="career-detail"><p>Taught the foundations and practical craft of mobile app development.</p><ul><li>Dart programming and Flutter framework</li><li>Firebase, REST APIs and state management</li></ul></div><button class="career-toggle" aria-label="Toggle details"><i class="fa-solid fa-plus"></i></button></article>
       </div>
     </section>
 
-    <!-- Education Section -->
-    <section id="education" class="section bg-light">
-      <div class="container">
-        <h2 class="section-title">Education</h2>
-        <div class="education-grid">
-          <div class="education-card">
-            <i class="fas fa-graduation-cap edu-icon"></i>
-            <h3>B.Sc. in Computer Science & Engineering</h3>
-            <h4>
-              IUBAT - International University of Business Agriculture &
-              Technology
-            </h4>
-            <p class="edu-date">May 2015 - Sept 2019</p>
-            <p>Dhaka-1230</p>
-          </div>
-          <div class="education-card">
-            <i class="fas fa-school edu-icon"></i>
-            <h3>Higher Secondary Certificate</h3>
-            <h4>Safiuddin Sarker Academy & College</h4>
-            <p class="edu-date">2014</p>
-            <p>Tongi, Gazipur</p>
-          </div>
-        </div>
+    <section id="education" class="section education">
+      <div class="section-heading" data-reveal><p class="eyebrow">04 / Education</p><h2>Where the foundation<br><span>was built.</span></h2></div>
+      <div class="education-grid">
+        <article data-reveal><div class="edu-icon"><i class="fa-solid fa-graduation-cap"></i></div><p>May 2015 — Sep 2019</p><h3>B.Sc. in Computer Science & Engineering</h3><span>IUBAT — International University of Business Agriculture & Technology · Dhaka</span></article>
+        <article data-reveal><div class="edu-icon"><i class="fa-solid fa-school"></i></div><p>2014</p><h3>Higher Secondary Certificate</h3><span>Safiuddin Sarker Academy & College · Tongi, Gazipur</span></article>
       </div>
     </section>
 
-    <!-- Contact Section -->
-    <section id="contact" class="section">
-      <div class="container">
-        <h2 class="section-title">Contact Me</h2>
-        <div class="contact-wrapper">
-          <div class="contact-card">
-            <div class="contact-icon"><i class="fas fa-phone-alt"></i></div>
-            <h3>Phone</h3>
-            <p>+880 1685 835483</p>
-          </div>
-          <div class="contact-card">
-            <div class="contact-icon"><i class="fas fa-envelope"></i></div>
-            <h3>Email</h3>
-            <p>
-              <a href="mailto:nahiduzzaman.dev@gmail.com"
-                >nahiduzzaman.dev@gmail.com</a
-              >
-            </p>
-          </div>
-          <div class="contact-card">
-            <div class="contact-icon"><i class="fab fa-linkedin-in"></i></div>
-            <h3>LinkedIn</h3>
-            <p>
-              <a
-                href="https://www.linkedin.com/in/nahiduzzaman-dev/"
-                target="_blank"
-                >Connect on LinkedIn</a
-              >
-            </p>
-          </div>
-        </div>
-
-        <div class="download-cv-area">
-          <a href="nahiduzzaman_badhon.pdf" class="btn btn-primary"
-            ><i class="fas fa-download"></i> Download Resume</a
-          >
-        </div>
-      </div>
+    <section id="contact" class="contact-section">
+      <div class="contact-orb"></div>
+      <p class="eyebrow" data-reveal>05 / Let's work together</p>
+      <h2 data-reveal>Have an app in mind?<br><span>Let’s make it real.</span></h2>
+      <p data-reveal>I’m always open to thoughtful products, ambitious teams, and interesting mobile challenges.</p>
+      <a class="contact-email magnetic" href="mailto:nahiduzzaman.dev@gmail.com" data-reveal>nahiduzzaman.dev@gmail.com <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+      <div class="contact-links" data-reveal><a href="tel:+8801685835483"><i class="fa-solid fa-phone"></i> +880 1685 835483</a><a href="https://github.com/Badhon100" target="_blank" rel="noreferrer"><i class="fa-brands fa-github"></i> GitHub</a><a href="https://www.linkedin.com/in/nahiduzzaman-dev/" target="_blank" rel="noreferrer"><i class="fa-brands fa-linkedin-in"></i> LinkedIn</a></div>
     </section>
+  </main>
 
-    <footer>
-      <div class="container footer-content">
-        <p>&copy; 2026 Nahiduzzaman Badhon. All Rights Reserved.</p>
-        <div class="footer-social">
-          <a href="https://github.com/Badhon100" target="_blank"
-            ><i class="fab fa-github"></i
-          ></a>
-          <a
-            href="https://www.linkedin.com/in/nahiduzzaman-dev/"
-            target="_blank"
-            ><i class="fab fa-linkedin"></i
-          ></a>
-          <a href="mailto:nahiduzzaman.dev@gmail.com"
-            ><i class="fas fa-envelope"></i
-          ></a>
-        </div>
-      </div>
-    </footer>
-
-    <script>
-      // Simple Mobile Menu Toggle
-      const hamburger = document.querySelector(".hamburger");
-      const navLinks = document.querySelector(".nav-links");
-
-      hamburger.addEventListener("click", () => {
-        navLinks.classList.toggle("active");
-      });
-
-      // Close menu when clicking a link
-      document.querySelectorAll(".nav-links a").forEach((link) => {
-        link.addEventListener("click", () => {
-          navLinks.classList.remove("active");
-        });
-      });
-
-      // Smooth Scroll for anchor links (polyfill for older browsers if needed, but modern browsers support CSS scroll-behavior)
-      document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
-        anchor.addEventListener("click", function (e) {
-          e.preventDefault();
-          document.querySelector(this.getAttribute("href")).scrollIntoView({
-            behavior: "smooth",
-          });
-        });
-      });
-    </script>
-  </body>
+  <footer><a href="#home" class="brand"><span>NB</span><i></i></a><p>© 2026 Nahiduzzaman Badhon. Built with intention.</p><a href="#home">Back to top <i class="fa-solid fa-arrow-up"></i></a></footer>
+  <script src="script.js?v=3"></script>
+</body>
 </html>
